@@ -218,3 +218,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---- Project-specific additions ----
+# macOS
+.DS_Store
+
+# Node / frontend
+node_modules/
+frontend/dist/
+
+# Secrets (never commit)
+.env
+.env.*
+!.env.example
+
+# Uploaded documents and generated reports (sensitive)
+backend/uploads/
+backend/reports/
+*.pdf
+!docs/**/*.pdf
